@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Perpustakaan</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript">
+        function msg () {
+            alert("Pastikan Seluruh Kolom Telah Terisi");
+        }
+    </script>
+</head>
+<body>
+    <header> <div class="logo">
+        <img src="—Pngtree—library logo_4363312.png" alt="Logo Perpustakaan" width="400">
+    <h1>Pustaka Literasi</h1>
+        <hr>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="transaksi.html">Transaksi</a></li>
+            <li><a href="profil.html">Profil</li>
+            <li><a href="login.html">Log In</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="transaksi">
+        <h2>Formulir Peminjaman Buku</h2>
+        <form action="#" method="POST">
+            <table>
+            <tr>
+                <td><label for="judul">Judul Buku</label></td>
+                <td><input type="text" id="judul" name="nama" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="pengarang">Nama Pengarang</label></td>
+                <td><input type="text" id="nama" name="nama" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="year">Tahun Terbit</label></td>
+                <td><input type="year" id="tahun" year="tahun" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="jumlah">Jumlah</label></td>
+                <td><input type="number" id="jumlah" name="jumlah" required></td>
+            </tr>
+
+            <tr>
+            <td><label for="kategori">Kategori Buku</label></td>
+            <td><select id="kategori" name="kategori" required>
+                <optionn value="blank"></option>
+                <option value="sejarah">Sejarah</option>
+                <option value="agama">Agama</option>
+                <option value="ensiklopedia">Ensiklopedia</option>
+                <option value="teknologi">Teknologi</option>
+                <option value="lainnya">Lainnya</option>
+            </select></td>
+            </tr>
+        </form>
+    </table>
+    <br>
+        <input type="button" value="Simpan" onclick="msg()"/>
+        <br>
+        <br>
+        <a href="daftar-transaksi.html">Lihat Daftar Transaksi</a>
+    </section>
+</main>
+
+    <footer>
+        <p>&copy; 2024 Pustaka Literasi</p>
+    </footer>
+
+</body>
+</html>
